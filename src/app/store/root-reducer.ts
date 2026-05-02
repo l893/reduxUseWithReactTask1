@@ -10,5 +10,3 @@ export const rootReducer = combineReducers({
   favorites: favoritesReducer,
   filters: filtersReducer,
 });
-
-export type RootState = ReturnType<typeof rootReducer>;

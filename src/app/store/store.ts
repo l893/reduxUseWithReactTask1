@@ -15,7 +15,7 @@ import storage from 'redux-persist/lib/storage';
 
 import { rootReducer } from './root-reducer';
 import { metricsMiddleware } from './middlewares/metrics-middleware';
-import type { RootState } from './root-reducer';
+import type { RootState } from './types';
 
 const persistConfig: PersistConfig<RootState> = {
   key: 'root',

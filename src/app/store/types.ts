@@ -1,6 +1,8 @@
 import type { AnyAction, Action } from 'redux';
 import type { ThunkAction, ThunkDispatch } from 'redux-thunk';
-import type { RootState } from './root-reducer';
+import type { rootReducer } from './root-reducer';
+
+export type RootState = ReturnType<typeof rootReducer>;
 
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
